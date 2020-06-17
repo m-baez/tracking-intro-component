@@ -1,0 +1,103 @@
+@import '/stylus/var.styl'
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+body
+  font-size: font18;
+  font-family: fBarlow
+  &::after
+    content: ""
+    background-color: lightGrayishBlue
+    position: absolute
+    top: 0
+    right: 0
+    border-radius: 0 0 0 70px
+    height: 65vh
+    width: 30vh
+    z-index: -1
+
+.header
+  padding: 38px 32px 64px
+  display: flex
+  justify-content: space-between
+  &__logo
+    width: 24px
+  &__hamb-iconHam
+    cursor: pointer
+  &__hamb-iconClose
+    cursor: pointer
+    display: none
+  &__nav
+    display: none
+
+.devices
+  overflow-x: hidden
+  & img
+    width: 518px
+    margin-bottom: 87px
+
+.content
+  padding: 0 32px
+  font-family: fBarlowCondense
+  text-transform: uppercase
+  margin-bottom: 92px
+  &__new
+    display: flex
+    align-items: center
+    letter-spacing: 5px
+    font-size: 16px
+    color: grayishBlue
+    & span
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: fBarlowCondenseB
+      width: 48px
+      height: 26px
+      margin-right: 18px
+      border-radius: 12px
+      letter-spacing: 1px
+      color: white
+      background-color: veryDarkBlue 
+  & h1
+    line-height: 42px
+    font-weight: fBarlowCondenseB 
+    font-size: 42px
+    color: veryDarkBlue
+    margin: 24px 0 28px
+  & p:nth-of-type(2)
+    font-family: fBarlow
+    text-transform: none 
+    letter-spacing: .5px
+    font-size: 18px
+    color: darkGrayishBlue
+    margin-bottom: 29px
+  &__flex
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    font-size: 16px
+    & button
+      font-family: fBarlowCondense
+      font-weight: fBarlowCondenseB
+      text-transform: uppercase
+      font-size: 16px
+      letter-spacing: .5px
+      border-radius: 6px
+      border: none
+      width: 153px
+      height: 40px
+      margin-right: 20px
+      color: white
+      background-color: red
+    & p
+      letter-spacing: 2px
+      color: grayishBlue
+
+
+
+
+
